@@ -101,7 +101,7 @@
       .grid-container {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        height: fit-content;
+        
         background-color: #ffffff;
       }
       
@@ -127,6 +127,7 @@
       .grid-itemimage {
         background-color: rgb(255, 255, 255);
         border: 0.5px solid rgba(0, 0, 0, 0.8);
+        
         
         
       }
