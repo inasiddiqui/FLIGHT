@@ -19,6 +19,7 @@
     flex-direction: row;
     column-gap: 20px;
     text-align: center;
+    height: max-content;
 
 
   }
@@ -99,18 +100,44 @@
       
       .grid-container {
         display: grid;
-        grid-template-columns: auto auto auto;
-        background-color: #2196F3;
-        padding: 10px;
+        grid-template-columns: 25% 25% 25% 25%;
+        height: fit-content;
+        background-color: #ffffff;
       }
       
       .grid-item {
         background-color: rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        padding: 20px;
+        border: 0.5px solid rgba(0, 0, 0, 0.8);
+        
         font-size: 30px;
         text-align: center;
+        
       }
+      .grid-item1 {
+        background-color: rgb(255, 255, 255);
+        border: 0.5px solid rgba(0, 0, 0, 0.8);
+         font-size: 280px;
+        text-align: center;
+        font-family: 'VT323', monospace;
+        line-height: 80%;
+    
+        
+      }
+
+      .grid-itemimage {
+        background-color: rgb(255, 255, 255);
+        border: 0.5px solid rgba(0, 0, 0, 0.8);
+        
+        
+      }
+
+
+
+
+
+
+
+
 
 
 
@@ -119,7 +146,7 @@
 
     flex-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         column-gap: 20px;
         text-align: center;
     
