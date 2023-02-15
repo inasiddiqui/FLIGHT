@@ -101,7 +101,6 @@
       .grid-container {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        
         background-color: #ffffff;
       }
       
@@ -120,6 +119,7 @@
         text-align: center;
         font-family: 'VT323', monospace;
         line-height: 80%;
+
     
         
       }
@@ -127,10 +127,21 @@
       .grid-itemimage {
         background-color: rgb(255, 255, 255);
         border: 0.5px solid rgba(0, 0, 0, 0.8);
-        
-        
-        
+          width: 100%;
+          height: 100%;
+          grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+          object-fit: cover;
       }
+       
+        
+       
+        
+        
+        
+      
 
 
 
