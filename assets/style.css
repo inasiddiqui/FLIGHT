@@ -1,144 +1,352 @@
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
 
 
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+
+
+
+
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  row-gap: 20px;
+  column-gap: 10px;;
+  padding: 10px;
+  max-width: 100vw;
+}
+
+.channel-title{
+  background-color: #2044f6;
+  border-radius: 25px;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 160px;
+  font-family: VT323;
+  flex: 40%;
+}
+
+.channel-description {
+  background-color: rgb(255, 143, 30);
+  border-radius: 25px;
+  padding: 40px;
+  font-size: 16px;
+  font-family: Roboto Mono;
+  flex: 60%;
+  text-align: left;
+}
+
+
+.full-name {
+ font-size: 24px;
+ font-family: Roboto Mono;
+
+}
+.channel-owner {
+  background-color: rgb(218, 218, 218);
+  border-radius: 25px;
+  padding: 20px;
+  font-size: 24px;
+  font-family: Roboto Mono;
+  
+}
+.channel-collaborator{
+  background-color: rgb(157, 121, 198);
+  border-radius: 25px;
+  padding: 20px;
+  font-size: 24px;
+  font-family: Roboto Mono;
  
-  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+}
 
-
+.channel-count{
+  border-style: dashed;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 24px;
+  font-family: Roboto Mono;
   
-
-
-  * {
-    box-sizing: border-box;
   }
   
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    row-gap: 20px;
-    column-gap: 10px;;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
     padding: 10px;
+    position: relative;
   }
-  
-  .channel-title{
-    background-color: #2044f6;
-    border-radius: 25px;
-    padding: 20px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    font-size: 160px;
-    font-family: VT323;
-    flex: 40%;
-  }
-  
-  .channel-description {
-    background-color: rgb(255, 143, 30);
-    border-radius: 25px;
-    padding: 40px;
-    font-size: 16px;
-    font-family: Roboto Mono;
-    flex: 40%;
-    text-align: left;
-  }
-  
-  
-  .full-name {
-   font-size: 24px;
-   font-family: Roboto Mono;
-  
-  }
-  .channel-owner {
-    background-color: rgb(218, 218, 218);
-    border-radius: 25px;
-    padding: 20px;
-    font-size: 24px;
-    font-family: Roboto Mono;
-    flex: 40%;
-  }
-  .channel-collaborator{
-    background-color: rgb(157, 121, 198);
-    border-radius: 25px;
-    padding: 20px;
-    font-size: 24px;
-    font-family: Roboto Mono;
-    flex: 40%;
-  }
-  
-  .channel-count{
-    border-style: dashed;
-    border-radius: 15px;
-    padding: 20px;
-    font-size: 24px;
-    font-family: Roboto Mono;
+
+  .grid-item {
     
-    }
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px dotted rgba(0, 0, 0, 0.8);
+    border-radius: 80px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    width: 430px;
+    height: 430px;
+    position: relative;
+     
+  }
+  
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+.container:hover .middle {
+    opacity: 1;
+  }
+
+  .grid-item:hover .title {
+    opacity: 1;
+    box-shadow: 5px 10px 8px #b9b9b9;
+
+
+} !important
     
   
 
-    
+       
+          
 
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 40px);
-      gap:10px;
-      padding: 10px;
-    }
+  .image-thumb{
+    width: 200px;
+    height: 200px;
+  }
+						.image-square{
+                            width: 300px;
+                            height: 300px;
+                            border-radius: 60px;
+                          }
+                        
+						.image-display{
+                            width: 300px;
+                            height: 300px;
+                            border-radius: 60px;
+                        }
+
+                        .image{
+                            width: 300px;
+                            height: 300px;
+                            border-radius: 60px;
+                        } 
+                       
+						
+      .title{
+        font-size: 14px;
+        font-family: Roboto Mono;
+        font-weight: 400;
+        padding: 20px;
+        text-transform: capitalize;
+        opacity: 0;
+        transition: 0.4s ease-in-out all;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        border-radius: 90px 90px 0px 0px;
+        
         
 
+      }
 
-        .title{
-          font-size: 16px;
-          font-family: Roboto Mono;
-        }
+      .time-updated{
+        font-size: 10px;
+        font-family: Roboto Mono;
+        
+   
+      }
 
-        .time-updated{
-          font-size: 12px;
-          font-family: Roboto Mono;
-        }
+      .time-created{
+        font-size: 10px;
+        font-family: Roboto Mono;
+        opacity: 70%;
+      
+      }
 
-        .time-created{
-          font-size: 12px;
-          font-family: Roboto Mono;
-          opacity: 70%;
-        }
+    
 
-        .audio-embed-blocks{
-          width: 400px;
-        }
+      .description{
+        font-size: 14px;
+        font-family: Roboto Mono;
+        font-style: italic;
+      }
 
-        .description{
-          font-size: 14px;
-          font-family: Roboto Mono;
-          font-style: italic;
-        }
+      .type{
+        font-size: 14px;
+        font-family: Roboto Mono;
+        font-weight: 700;
+      }
+      
+      .content{
+        font-size: 18px;
+        font-family: Roboto Mono;
+        font-weight: 200;
+        margin: 20px;
+      }
 
-        .type{
-          font-size: 14px;
-          font-family: Roboto Mono;
-          font-weight: 700;
-        }
-        image{
-          size: 50%;
-          background-color: #20f644;
+      .link-title{
+        font-family: Roboto Mono;
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+        font-style: italic;
+        opacity: 0.1;
+        font-weight: 200;
+      }
+
+  
+      
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      @media (max-width: 400px) {
+
+
+
+        .flex-container {
+          flex-direction: column;
+          row-gap: 10px;
+          column-gap: 10px;;
           padding: 10px;
+          max-width: 100vw;
         }
+      
+      .channel-title{
+        background-color: #2044f6;
+        border-radius: 25px;
+        padding: 10px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-size: 130px;
+        font-family: VT323;
+        flex: 40%;
+      }
+      
+      .channel-description {
+        background-color: rgb(255, 143, 30);
+        border-radius: 25px;
+        padding: 10px;
+        font-size: 14px;
+        font-family: Roboto Mono;
+        flex: 60%;
+        text-align: left;
+      }
+      .full-name {
+        font-size: 24px;
+        font-family: Roboto Mono;
+       
+       }
+       .channel-owner {
+         background-color: rgb(218, 218, 218);
+         border-radius: 20px;
+         padding: 10px;
+         margin: 5px;
+         font-size: 16px;
+         font-family: Roboto Mono;
+         flex: 40%;
+       }
+       .channel-collaborator{
+         background-color: rgb(157, 121, 198);
+         border-radius: 20px;
+         padding: 10px;
+         margin: 5px;
+         font-size: 16px;
+         font-family: Roboto Mono;
+         flex: 40%;
+       }
+       
+       .channel-count{
+         border-style: dashed;
+         border-radius: 20px;
+         padding: 20px;
+         font-size: 16px;
+         font-family: Roboto Mono;
+         margin: 5px;
+         
+         }
+
+         .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+             gap: 10px;
+            padding: 10px;
+            
+            
+          }
+          .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px rgba(0, 0, 0, 0.8);
+            border-style: double;
+            border-radius: 40px;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            width: 350px;
+            align-content: center;
+            
+            
+          }
         
+        
+          image-thumb{
+            width: 200px;
+            height: 200px;
+          }
+                                .image-square{
+                                    width: 250px;
+                                    height: 250px;
+                                  }
+                                
+                                .image-display{
+                                    width: 250px;
+                                    height: 250px;
+                                }
+        
+                                .image{
+                                    width: 250px;
+                                    height: 250px;
+                                }
+                                .content{
+                                    font-size: 20px;
+                                    font-family: Roboto Mono;
+                                    font-weight: 400;
+                                   
+                                  }
 
-  
-
-
-
-
-
-
-
-
-
-
+                                }
