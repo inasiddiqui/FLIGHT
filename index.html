@@ -1,64 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="assets/reset.css" rel="stylesheet">
+		<link href="assets/style.css" rel="stylesheet">
+		<script defer src="assets/arena.js"></script>
+	</head>
+	<body>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+		<img src="file:///Users/inasiddiqui/Desktop/FLIGHT/assets/noun-flight-1014306.svg" alt="Iconhome" width="300">
 
 
+		<section class="flex-container">
+			<!-- Replace this URL with your channel to connect the API! -->
+			<a href="https://www.are.na/sandra-qin/flight-wqwqoip9im" id="channel-url">
+				<h1 class="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
+			</a>
+			<div class="channel-description"></div> <!-- Same here for the channel description. -->
+		</section>
 
-<body>
+			<section>
+			<div class="channel-owner"> </div> <!-- Owner and collaborators. -->
+			<div class="channel-collaborator"> </div> <!-- Owner and collaborators. -->
+		</section>
 
-    <section style="background-color:black; padding: 50px;">
-    <img src="file:///Users/inasiddiqui/Downloads/noun-airplane-3937504-01.png" alt="Trulli" width="150" height="150">
+		<template id="channel-owner">
+			
+			<a class="link"> <!-- Link to their profile inserts here. -->
+				<p class="full-name"></p> <!-- Username inserts here. -->
+			</a>
+		
+	</template>
+	<!-- And collaborator. -->
+	<template id="channel-collaborator">
+						
+			<a class="link">
+				<p class="full-name"></p>
+			</a>
+		
+	</template>
+		
+		<section>
+			<h2 class="channel-count"></h2> <!-- How many blocks. -->
+			<!-- All the channel “blocks” will be created as children, here. -->
+			<!-- You could move the classes to different section elements to separate the types! -->
 
-<div class="flex-container">
-    <div class="flex-item-left">FLIGHT AI120
-    </div>
+		</section>
 
-    <div class="flex-item-centre"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </div>
 
-    <div class="flex-item-right">2
+		<br><br>
+				
+			
+			<section class="grid-container">
+           
+			<div class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks text-blocks video-embed-blocks video-file-blocks grid-container">
+			
+		
+		<!-- These are the templates for the various block types, below. -->
+		<!-- You can move/nest/remove any of the insertion points! -->
+		<!-- For example, you could only show images for actual image blocks. -->
+		<!-- You could not show the type if you group them by section, above. -->
+		<!-- Template for the channel owner. -->
+	
 
-        <div class="col top">a</div>
-        <div class="col middle">b</div>
-        <div class="col bottom">c</div>
-        <div class="col bottom2">d</div>
-    </div>
-    
-  </div>
-</section>
+				
+	
+		
+ 		<!-- Spotify, Soundcloud, etc. -->
+		
+		<template id="audio-embed-block">
+		
+				<div class="audio-embed grid-item"> <!-- You can use the container classes to style a whole type. -->
+					<h3 class="title"></h3> <!-- Block title inserts here. -->
+					<picture>
+					
+						<source class="image-display">
+						<img class="image">
+					</picture>
+					<!-- <div class="embed"></div> <!-- Embed iframe inserts here.
+					<a class="link"> <!-- Original URL inserts here. -->
+						<!--<p class="link-title"></p> <!-- Link title inserts here. -->
+					<!--</a> --> 
+					<p class="time-updated"></p> <!-- When it was last updated. -->
+					
+				</div>
+			
+		</template>
 
-    <section>
-        <div class="grid-container">
-            <div class="grid-item1">DEL</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item1">00</div>  
-            <div class="grid-itemimage">
-                <img src="file:///Users/inasiddiqui/Downloads/original_e69b259c86f6f819b8761b2b650861cf.jpeg" alt="Trolli">
-            </div>
-            <div class="grid-item">5</div>
-            <div class="grid-item1">JFK</div>  
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>  
-            <div class="grid-item">10</div>
-            <div class="grid-item">11</div>
-            <div class="grid-item">9</div>  
-          </div>
-    </section>
+ 		<!-- Uploaded audio files. -->
 
-        
-</body>
+		<template id="audio-file-block">
+	
+				<div class="audio-file-block grid-item">
+					<h3 class="title"></h3>
+					<picture>
+					
+						<source class="image-display">
+						<img class="image">
+					</picture>
+					<audio class="audio" controls></audio> <!-- Audio source inserts here. -->
+					<p class="time-updated"></p>
+					
+				</div>
+		
+		</template>
+
+
+		<!-- Images. -->
+
+		<template id="image-block" >
+		
+				<div class="image-block grid-item ">
+					
+					<h3 class="title"></h3>
+
+					<picture>
+						<source class="image-thumb">
+						<source class="image-display">
+						<img class="image">
+						
+					</picture>
+					<a class="link">
+						<p class="link-title"></p>
+					</a>
+					<p class="time-updated"></p>
+					
+					<div class="middle" 
+				<p> Hi</p>></p></div>
+						
+					
+				
+				</div>
+		</template>
+
+
+		<!-- Links (saved sites). -->
+
+		<template id="link-block">
+
+				<div class="link-block grid-item">
+					<h3 class="title"></h3>
+					<picture>
+						<source class="image-thumb">
+						<source class="image-square">
+						<source class="image-display">
+						<img class="image">
+					</picture>
+					<a class="link">
+						<p class="link-title"></p>
+					</a>
+					<p class="time-updated"></p>
+					
+				</div>
+		</template>
+		<!-- Did anyone add PDFs? -->
+
+
+		<!-- Text. -->
+
+		<template id="text-block">
+				<div class="text-block grid-item">
+					<h3 class="title"></h3>
+					<br>
+
+					<div class="content"></div> <!-- Text blocks insert their HTML here. -->
+					
+					<p class="time-updated"></p>
+					
+				</div>
+		</template>
+
+		<!-- YouTube, Vimeo, etc. -->
+		<template id="video-embed-block">
+			
+				<div class="video-embed-block grid-item">
+					<h3 class="title"></h3>
+					
+					<picture>
+						<source class="image-thumb">
+						<source class="image-square">
+						<source class="image-display">
+						<img class="image">
+					</picture>
+					<!-- <div class="embed"></div>
+					<a width="300" height="300" class="link">
+						<p class="link-title"></p>
+					</a> -->
+				
+					<p class="time-updated"></p>
+					
+				</div>
+			
+		</template>
+
+
+
+		<!-- Uploaded video files. -->
+		<template id="video-file-block">
+		
+				<div class="video-file-block grid-item">
+					<h3 class="title"></h3>
+				
+					<video controls> </video> <!-- Video source inserts here. -->
+					
+					<p class="time-updated"></p>
+					
+				</div>
+			
+		</template>
+	</section>
+
+
+	
+	</body>
 </html>
