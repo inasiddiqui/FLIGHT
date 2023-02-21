@@ -104,16 +104,6 @@
   }
   
 
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
 
 
 .container:hover .middle {
@@ -127,7 +117,7 @@
 
 } !important
     
-  
+
 
        
           
@@ -166,11 +156,14 @@
         white-space: nowrap; 
         overflow: hidden;
         text-overflow: ellipsis; 
-        border-radius: 90px 90px 0px 0px;
+        border-radius: 80px 80px 0px 0px;
+        border: 1px dotted rgba(0, 0, 0, 0.8);
         
-        
-
       }
+
+      
+        
+      
 
       .time-updated{
         font-size: 10px;

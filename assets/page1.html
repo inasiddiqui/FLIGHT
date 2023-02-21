@@ -3,33 +3,42 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="assets/reset.css" rel="stylesheet">
-		<link href="assets/style.css" rel="stylesheet">
-		<script defer src="assets/arena.js"></script>
+		<link href="reset.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<script defer src="arena.js"></script>
 	</head>
 	<body>
 
 		<img src="file:///Users/inasiddiqui/Desktop/FLIGHT/assets/noun-flight-1014306.svg" alt="Iconhome" width="300">
+
+
+        <div class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks text-blocks video-embed-blocks video-file-blocks grid-container">
+
+        <template id="video-embed-block"></template>
     		
-				<div class="video-embed-block grid-item">
+				<div class="video-embed-block">
 					<h3 class="title"></h3>
 					
 					<picture>
 						<source class="image-thumb">
 						<source class="image-square">
 						<source class="image-display">
+                        
 						<img class="image">
 					</picture>
 					<div class="embed"></div>
 					<a width="300" height="300" class="link">
 						<p class="link-title"></p>
 					</a>
+                    <figcaption class="description"></figcaption> <!-- Block description inserts here. -->
+					<p class="type"></p> <!-- Block type/kind inserts here. -->
 				
 					<p class="time-updated"></p>
-					
+                </figure>
 				</div>
 			
 		</template>
                     <p> Hello</p>
+                </div>
 </body>
 </html>
