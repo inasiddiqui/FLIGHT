@@ -35,7 +35,7 @@
   padding-bottom: 30px;
   font-size: 160px;
   font-family: VT323;
-  flex: 40%;
+  flex: 50%;
 }
 
 .channel-description {
@@ -58,17 +58,32 @@
   background-color: rgb(218, 218, 218);
   border-radius: 25px;
   padding: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: Roboto Mono;
+  max-height: 70px;
   
 }
 .channel-collaborator{
   background-color: rgb(157, 121, 198);
   border-radius: 25px;
   padding: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: Roboto Mono;
+  max-height: 70px;
+  
  
+}
+
+
+.images-button{
+  background-color: rgb(255, 206, 30);
+border-radius: 25px;
+padding: 40px;
+font-size: 16px;
+font-family: Roboto Mono;
+flex: 60%;
+text-align: left;
+
 }
 
 .channel-count{
@@ -146,7 +161,7 @@
                         
 						
       .title{
-        font-size: 14px;
+        font-size: 10px;
         font-family: Roboto Mono;
         font-weight: 400;
         padding: 20px;
@@ -162,6 +177,9 @@
       }
 
       
+  .grid-item:hover .title {
+    opacity: 1;
+    box-shadow: 5px 10px 8px #e1e1e1; } 
         
       
 
@@ -213,9 +231,40 @@
         font-weight: 200;
       }
 
+      .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        
+      }
+      .images-button{
+        background-color: rgb(255, 206, 30);
+  border-radius: 25px;
+  padding: 40px;
+  font-size: 16px;
+  font-family: Roboto Mono;
+  flex: 60%;
+  text-align: left;
+
+      }
+
   
       
      
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -265,7 +314,7 @@
         text-align: left;
       }
       .full-name {
-        font-size: 24px;
+        font-size: 20px;
         font-family: Roboto Mono;
        
        }
@@ -283,7 +332,7 @@
          border-radius: 20px;
          padding: 10px;
          margin: 5px;
-         font-size: 16px;
+         font-size: 12px;
          font-family: Roboto Mono;
          flex: 40%;
        }
@@ -300,9 +349,9 @@
 
          .grid-container {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
              gap: 10px;
-            padding: 10px;
+           
             
             
           }
@@ -310,40 +359,104 @@
             background-color: rgba(255, 255, 255, 0.8);
             border: 1px rgba(0, 0, 0, 0.8);
             border-style: double;
-            border-radius: 40px;
-            padding: 10px;
+            padding: 1px;
+            border-radius: 20px;
             font-size: 20px;
             text-align: center;
-            width: 350px;
+            width: 150px;
+            height: 200px;
             align-content: center;
             
             
           }
         
+
+          .title{
+            font-size: 10px;
+            font-family: Roboto Mono;
+            font-weight: 400;
+            padding: 10px;
+            text-transform: capitalize;
+            opacity: 0;
+            transition: 0.4s ease-in-out all;
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow: ellipsis; 
+            border-radius: 20px 20px 0px 0px;
+            border: 1px dotted rgba(0, 0, 0, 0.8);
+            
+          }
+    
         
           image-thumb{
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
           }
                                 .image-square{
-                                    width: 250px;
-                                    height: 250px;
+                                    width: 120px;
+                                    height: 120px;
+                                    border-radius: 10px;
                                   }
                                 
                                 .image-display{
-                                    width: 250px;
-                                    height: 250px;
+                                  width: 100px;
+                                  height: 100px;
+                                  border-radius: 10px;
                                 }
         
                                 .image{
-                                    width: 250px;
-                                    height: 250px;
+                                  width: 100px;
+                                  height: 100px;
+                                  border-radius: 10px;
                                 }
                                 .content{
-                                    font-size: 20px;
+                                    font-size: 7px;
                                     font-family: Roboto Mono;
                                     font-weight: 400;
+                                    border-radius: 10px;
                                    
+                                  }
+
+
+                                  .time-updated{
+                                    font-size: 8px;
+                                    font-family: Roboto Mono;
+                                    
+                               
+                                  }
+                            
+                                  .grid-item:hover .time-updated {
+                                    color: blue;
+                                  }
+                            
+                                  .time-created{
+                                    font-size: 8px;
+                                    font-family: Roboto Mono;
+                                    opacity: 70%;
+                                  
+                                  }
+                            
+                                
+                            
+                                  .description{
+                                    font-size: 14px;
+                                    font-family: Roboto Mono;
+                                    font-style: italic;
+                                  }
+                            
+                                  .type{
+                                    font-size: 14px;
+                                    font-family: Roboto Mono;
+                                    font-weight: 700;
+                                  }
+
+                                  .link-title{
+                                    font-family: Roboto Mono;
+                                    font-size: 6px;
+                                    color: rgb(0, 0, 0);
+                                    font-style: italic;
+                                    opacity: 0.1;
+                                    font-weight: 200;
                                   }
 
                                 }
