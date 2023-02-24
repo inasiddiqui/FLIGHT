@@ -38,6 +38,11 @@
   flex: 50%;
 }
 
+
+.channel-title:hover{
+  color: rgb(255, 255, 255);
+}
+
 .channel-description {
   background-color: rgb(255, 143, 30);
   border-radius: 25px;
@@ -57,41 +62,34 @@
 .channel-owner {
   background-color: rgb(218, 218, 218);
   border-radius: 25px;
-  padding: 20px;
+  padding: 30px;
   font-size: 20px;
   font-family: Roboto Mono;
-  max-height: 70px;
+  min-height: 100px;
   
 }
 .channel-collaborator{
   background-color: rgb(157, 121, 198);
   border-radius: 25px;
-  padding: 20px;
+  padding: 30px;
   font-size: 20px;
   font-family: Roboto Mono;
-  max-height: 70px;
+  min-height: 100px;
   
  
 }
 
 
-.images-button{
-  background-color: rgb(255, 206, 30);
-border-radius: 25px;
-padding: 40px;
-font-size: 16px;
-font-family: Roboto Mono;
-flex: 60%;
-text-align: left;
 
-}
 
 .channel-count{
   border-style: dashed;
   border-radius: 15px;
-  padding: 20px;
+  padding: 30px;
   font-size: 24px;
   font-family: Roboto Mono;
+  padding: 20px;
+  margin: 10px;
   
   }
   
@@ -110,6 +108,7 @@ text-align: left;
     border: 1px dotted rgba(0, 0, 0, 0.8);
     border-radius: 80px;
     padding: 10px;
+    padding-top: 40px;
     font-size: 30px;
     text-align: center;
     width: 430px;
@@ -119,50 +118,43 @@ text-align: left;
   }
   
 
-
-
-.container:hover .middle {
-    opacity: 1;
-  }
-
   .grid-item:hover .title {
     opacity: 1;
-    box-shadow: 5px 10px 8px #e1e1e1; } 
+    box-shadow: 5px 10px 8px #e1e1e1;
+   height: 100%; } 
 
-  
-    
-
-
-       
-          
 
   .image-thumb{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+    align-self: center;
   }
 						.image-square{
-                            width: 300px;
-                            height: 300px;
+                            width: 400px;
+                            height: 400px;
                             border-radius: 60px;
+                            align-self: center;
                           }
                         
 						.image-display{
-                            width: 300px;
-                            height: 300px;
+                            width: 400px;
+                            height: 400px;
                             border-radius: 60px;
+                            align-self: center;
                         }
 
                         .image{
                             width: 300px;
                             height: 300px;
                             border-radius: 60px;
+            
                         } 
                         
                         
 						
       .title{
-        font-size: 10px;
-        font-family: Roboto Mono;
+        font-size: 36px;
+        font-family: VT323;
         font-weight: 400;
         padding: 20px;
         text-transform: capitalize;
@@ -171,15 +163,23 @@ text-align: left;
         white-space: nowrap; 
         overflow: hidden;
         text-overflow: ellipsis; 
-        border-radius: 80px 80px 0px 0px;
-        border: 1px dotted rgba(0, 0, 0, 0.8);
+        border-radius: 80px 80px 80px 80px;
+        background-color: rgb(35, 35, 35);
+        width: 100%;
+        height: 0;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 10;
+        padding-top: calc(50% - 10px);
+        color: white;
+      
         
       }
 
       
-  .grid-item:hover .title {
-    opacity: 1;
-    box-shadow: 5px 10px 8px #e1e1e1; } 
+  
+
         
       
 
@@ -216,7 +216,7 @@ text-align: left;
       }
       
       .content{
-        font-size: 18px;
+        font-size: 16px;
         font-family: Roboto Mono;
         font-weight: 200;
         margin: 20px;
@@ -241,13 +241,25 @@ text-align: left;
       .images-button{
         background-color: rgb(255, 206, 30);
   border-radius: 25px;
-  padding: 40px;
-  font-size: 16px;
+  padding: 30px;
+  font-size: 24px;
   font-family: Roboto Mono;
-  flex: 60%;
-  text-align: left;
+  min-height: 100px;
+  
 
       }
+
+      .articles{
+        background-color: rgb(108, 151, 75);
+  border-radius: 25px;
+  padding: 30px;
+  font-size: 24px;
+  font-family: Roboto Mono;
+  min-height: 100px;
+  
+
+      }
+
 
   
       

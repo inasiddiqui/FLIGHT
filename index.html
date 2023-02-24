@@ -6,6 +6,7 @@
 		<link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
 		<script defer src="assets/arena.js"></script>
+		<script src="assets/expand.js"></script>
 	</head>
 	<body>
 
@@ -21,9 +22,10 @@
 		</section>
 
 			<section class="flex-container">
-			<div class="channel-owner"></div> <!-- Owner and collaborators. -->
-			<div class= " channel-collaborator"> </div> <!-- Owner and collaborators. -->
-			<a href="#" class= "images-button">  Images</a> <!-- Owner and collaborators. -->
+			<div class="channel-owner"> <p>&#8599;</p> </div> <!-- Owner and collaborators. -->
+		<nobr><div class= " channel-collaborator" > <p>&#8599;</p>  </div> </nobr> <!-- Owner and collaborators. -->
+			<a href="#" class= "images-button "> <p>&#8599;  Images </p> </a> <!-- Owner and collaborators. -->
+			<a href="#" class= "articles">   <p>&#8599;  Images  Good stuff to read </p> </a> <!-- Owner and collaborators. -->
 		</section>
 
 		<template id="channel-owner">
@@ -41,7 +43,7 @@
 			</a>
 		
 	</template>
-		
+		<br>
 		<section>
 			<h2 class="channel-count"></h2> <!-- How many blocks. -->
 			<!-- All the channel “blocks” will be created as children, here. -->
@@ -212,6 +214,21 @@
 		</template>
 	</section>
 
+
+
+	<script> 
+		var allItems= document.getElementsByClassName('grid-item')
+    console.log(allItems)
+    allItems.forEach((box) => { box.addEventListener('click', expand(this)
+	)
+
+  }  ) 
+
+  {
+		console.log(box + 'was clicked'); 
+		
+	}
+    </script>
 
 	
 	</body>
