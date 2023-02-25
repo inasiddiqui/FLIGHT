@@ -152,31 +152,23 @@
 
                         .image{
                             width: 400px;
+                            max-height: 500px;
             
                         } 
                         
                         
 						
       .title{
-        font-size: 36px;
+        font-size: 26px;
         font-family: VT323;
         font-weight: 400;
-        padding: 20px;
+        padding: 10px;
         text-transform: capitalize;
-        opacity: 0;
         transition: 0.4s ease-in-out all;
         white-space: nowrap; 
         overflow: hidden;
-        text-overflow: ellipsis; 
-        border-radius: 80px 80px 80px 80px;
-        background-color: rgb(35, 35, 35);
-        width: 100%;
-        height: 0;
-        position: absolute;
-        top:0;
-        left:0;
-        z-index: 10;
-        padding-top: calc(50% - 10px);
+        text-overflow: ellipsis;   
+        padding-top:20px;
         color: white;
       
         
@@ -186,28 +178,33 @@
       .time-updated{
         font-size: 10px;
         font-family: Roboto Mono;
+        color: white;
+        text-decoration: overline 1px dotted ;
+       
         
    
       }
 
-      .grid-item:hover .time-updated {
-        color: blue;
-      }
+      li:hover  {
+        background-color: rgba(224, 117, 36, 0.8);
+        border: 1px dotted rgba(255, 255, 255, 0.8);
+        box-shadow: 5px 10px 8px #cacaca;
+        
+      } 
+    
 
       .time-created{
         font-size: 10px;
         font-family: Roboto Mono;
-        opacity: 70%;
+        color: white;
+        text-decoration: overline 1px dotted ;
+        
       
       }
 
     
 
-      .description{
-        font-size: 14px;
-        font-family: Roboto Mono;
-        font-style: italic;
-      }
+    
 
       .type{
         font-size: 14px;
@@ -216,7 +213,7 @@
       }
       
       .content{
-        font-size: 16px;
+        font-size: 10px;
         font-family: Roboto Mono;
         font-weight: 200;
         margin: 20px;
@@ -225,9 +222,10 @@
       .link-title{
         font-family: Roboto Mono;
         font-size: 10px;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         font-style: italic;
         font-weight: 200;
+        
       }
 
       .arrow {
@@ -269,7 +267,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(255, 255, 255, 1);
+  background-color: black;
 	z-index: 2;
 	padding: 40px;
 }
@@ -290,7 +288,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: black;
 	z-index: 2;
 	padding: 40px;
 }
@@ -313,7 +311,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: black;
 	z-index: 2;
 	padding: 40px;
 }
@@ -335,7 +333,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: black;
 	z-index: 2;
 	padding: 40px;
 }
@@ -355,7 +353,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: black;
 	z-index: 2;
 	padding: 40px;
 }
@@ -376,7 +374,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: black;
 	z-index: 2;
 	padding: 40px;
 }
@@ -397,7 +395,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: black;
 	z-index: 2;
 	padding: 40px;
 }
@@ -415,14 +413,83 @@
 }
 .description{
   padding-top: 10px;
-  font-size: 10px;
+  font-size: 16px;
   font-family: Roboto Mono;
-  margin-left: 300px;
-  margin-right:300px;
-  border: 1px dotted black;
+  font-weight: 400;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  text-decoration: overline 1px dotted ;
+  background-color: rgb(255, 143, 30);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
   
 }
+     .aside-grid-container{
+      display: flex;
+      justify-content: center;
+      
+     }
+
+     .aside-item {
+      
+      border: 1px dotted rgb(255, 255, 255);
+      border-radius: 45px;
+      margin: 20px;
+      padding: 10px;
+      max-width: 700px;
+      text-align: left;
+      padding: 40px;
+      
+    }
+
+    .aside-item-fill{
+      background-color: lightblue;
+  border: solid black 1px;
+  
+    }
+
+    .button-style{
      
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      border-radius: 10px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      background-color: rgb(157, 121, 198);
+      color: black;
+      border: 2px solid #555555;
+      font-family: Roboto Mono;
+    }
+
+    .button-style:hover {
+      background-color: #f3c144;
+      color: rgb(0, 0, 0);
+    }
+    .footer {
+      left: 0;
+      bottom: 0;
+      
+      background-color: rgb(157, 121, 198);
+      font-family: Roboto Mono;
+      border-radius: 20px;
+      color: rgb(0, 0, 0);
+      text-align: left;
+      font-family: Roboto Mono;
+      font-size: 10px;
+      padding: 20px;
+      margin-top: 50px;
+      margin: 20px
+      
+   }
+
+
+
+
 
 
 
