@@ -6,7 +6,7 @@
 		<link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
 		<script defer src="assets/arena.js"></script>
-		<script src="assets/expand.js"></script>
+		<script defer src="assets/main.js"></script>
 	</head>
 	<body>
 
@@ -55,10 +55,10 @@
 		<br><br>
 				
 			
-			<section class="grid-container">
+			<main>
            
-			<div class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks text-blocks video-embed-blocks video-file-blocks grid-container">
-			
+			<ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks text-blocks video-embed-blocks video-file-blocks"> </ul>
+		</main>
 		
 		<!-- These are the templates for the various block types, below. -->
 		<!-- You can move/nest/remove any of the insertion points! -->
@@ -74,20 +74,23 @@
 		
 		<template id="audio-embed-block">
 		
-				<div class="audio-embed grid-item"> <!-- You can use the container classes to style a whole type. -->
+				<li class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
 					<h3 class="title"></h3> <!-- Block title inserts here. -->
-					<picture>
-						<source class="image-thumb">
-						<source class="image-display">
-						<img class="image">
-					</picture>
+					<figure>
+						<img class="image-square">
+						
+					</figure>
 					<!-- <div class="embed"></div> <!-- Embed iframe inserts here.
 					<a class="link"> <!-- Original URL inserts here. -->
 						<!--<p class="link-title"></p> <!-- Link title inserts here. -->
-					<!--</a> --> 
+					<!--</a>  -->
 					<p class="time-updated"></p> <!-- When it was last updated. -->
+
+					<aside>
+						<img class="image">
+					</aside>
 					
-				</div>
+				</li>
 			
 		</template>
 
@@ -95,17 +98,19 @@
 
 		<template id="audio-file-block">
 	
-				<div class="audio-file-block grid-item">
+				<li class="audio-file-block">
 					<h3 class="title"></h3>
-					<picture>
-						<source class="image-thumb">
-						<source class="image-display">
-						<img class="image">
-					</picture>
+					<figure>
+						<img class="image-square">
+						
+					</figure>
 					<audio class="audio" controls></audio> <!-- Audio source inserts here. -->
 					<p class="time-updated"></p>
 					
-				</div>
+					<aside>
+						<img class="image">
+					</aside>
+				</li>
 		
 		</template>
 
@@ -114,28 +119,27 @@
 
 		<template id="image-block" >
 		
-				<div class="image-block grid-item ">
+				<li class="image-block ">
 					
 					
 					<h3 class="title"></h3>
 
-					<picture>
-						<source class="image-thumb">
-						<source class="image-display">
-						<img class="image">
+					<figure>
+						<img class="image-square">
 						
-					</picture>
-					<a class="link">
+					</figure>
+					<!-- <a class="link">
 						<p class="link-title"></p>
-					</a>
+					</a> -->
+					
 					<p class="time-updated"></p>
-
-					<div id="fill"></div>
-					
-					
-				</div>
-
+					<aside>
+						<img class="image">
+						<h3 class="title"> </h3>
+						
+					</aside>
 				
+				</li>
 		</template>
 
 
@@ -143,57 +147,71 @@
 
 		<template id="link-block">
 
-				<div class="link-block grid-item">
+				<li class="link-block">
 					<h3 class="title"></h3>
-					<picture>
-						<source class="image-thumb">
-						<source class="image-square">
-						<source class="image-display">
-						<img class="image">
-					</picture>
+					<figure>
+						<img class="image-square">
+						
+					</figure>
 					<a class="link">
 						<p class="link-title"></p>
 					</a>
 					<p class="time-updated"></p>
+
+					<aside>
+						<img class="image">
+						<a class="link">
+							<p class="link-title"></p>
+							
+					</a>
+						<p class="description"></p>
+						<p class="time-updated"></p>
+						<p class="time-created"></p>
+						
+						
+					</aside>
 					
-				</div>
+				</li>
 		</template>
-		<!-- Did anyone add PDFs? -->
+		
 
 
 		<!-- Text. -->
 
 		<template id="text-block">
-				<div class="text-block grid-item">
+				<li class="text-block">
 					<h3 class="title"></h3>
 					<br>
 
 					<div class="content"></div> <!-- Text blocks insert their HTML here. -->
 					
 					<p class="time-updated"></p>
+					<aside>
+						<img class="image-square">
+					</aside>
 					
-				</div>
+				</li>
 		</template>
 
 		<!-- YouTube, Vimeo, etc. -->
 		<template id="video-embed-block">
 			
-				<div class="video-embed-block grid-item">
+				<li class="video-embed-block">
 					<h3 class="title"></h3>
 					
-					<picture>
-						<source class="image-thumb">
-						<source class="image-square">
-						<source class="image-display">
-						<img class="image">
-					</picture>
-					<!-- <!-- <div class="embed"></div> -->
+					<figure>
+						<img class="image-square">
+						
+					</figure>
+				
 					<a width="300" height="300" class="link">
 						<p class="link-title"></p>
 					</a> 
 					<p class="time-updated"></p>
-					
-				</div>
+					<aside>
+						<div class="embed"> </div>
+					</aside>
+				</li>
 			
 		</template>
 
@@ -202,33 +220,28 @@
 		<!-- Uploaded video files. -->
 		<template id="video-file-block">
 		
-				<div class="video-file-block grid-item">
+				<li class="video-file-block">
 					<h3 class="title"></h3>
-				
+					<figure>
+						<img class="image-thumb">
+						
+					</figure>
 					<video controls> </video> <!-- Video source inserts here. -->
 					
 					<p class="time-updated"></p>
 					
-				</div>
+
+					<aside>
+						<div class="embed"> </div>
+					</aside>
+				</li>
 			
 		</template>
 	</section>
 
 
 
-	<script> 
-		var allItems= document.getElementsByClassName('grid-item')
-    console.log(allItems)
-    allItems.forEach((box) => { box.addEventListener('click', expand(this)
-	)
-
-  }  ) 
-
-  {
-		console.log(box + 'was clicked'); 
-		
-	}
-    </script>
+	
 
 	
 	</body>
