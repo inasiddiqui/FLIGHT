@@ -11,7 +11,7 @@ window.arenaCallback = () => {
     let linkBlocks = document.querySelectorAll('li.link-block')
     let textBlocks = document.querySelectorAll('li.text-block')
 
-    let allBlocks=  [...imageBlocks, ...audioembedBlocks, ...audioBlocks, ...videoBlocks, ...videoembedBlocks, ...linkBlocks, ]; // ...textBlocks
+    let allBlocks=  [...imageBlocks, ...audioembedBlocks, ...audioBlocks, ...videoBlocks, ...videoembedBlocks, ...linkBlocks,...textBlocks ]; // ...textBlocks
     // allBlocks = Array.prototype.concat.apply([], allBlocks);
     // allBlocks.flat(1);
     console.log (allBlocks)
