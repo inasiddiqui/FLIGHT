@@ -11,7 +11,9 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 
-
+.logo{
+margin-top: 20px;
+}
 
 
 
@@ -80,7 +82,15 @@
   
  
 }
+.channel-collaborator:hover{
+  background-color: black;
+  color: white;
+}
 
+.channel-owner:hover{
+  background-color: black;
+  color: white;
+}
 
 
 
@@ -242,9 +252,7 @@
   font-size: 24px;
   font-family: Roboto Mono;
   min-height: 100px;
-  
-
-      }
+  }
 
       .articles{
         background-color: rgb(108, 151, 75);
@@ -256,6 +264,18 @@
   
 
       }
+
+
+      .images-button:hover{
+        background-color: #000000;
+        color: white;
+      }
+      .articles:hover{
+        background-color: #000000;
+        color: white;
+      }
+
+      
       figure > img { object-fit: cover; }
 
 
@@ -587,8 +607,13 @@
          font-size: 12px;
          font-family: Roboto Mono;
          padding: 10px;
-         min-height: 50px;
+         min-height: 30px;
         
+       }
+
+       .channel-owner:hover{
+        background-color: black;
+        color: white;
        }
        .channel-collaborator{
          background-color: rgb(157, 121, 198);
@@ -596,8 +621,13 @@
          font-size: 12px;
          font-family: Roboto Mono;
          padding: 10px;
-         min-height: 50px;
+         min-height: 30px;
          
+       }
+
+       .channel-collaborator:hover{
+        background-color: black;
+        color: white;
        }
        
        .channel-count{
@@ -922,6 +952,7 @@
                                   padding: 10px;
                                   max-width: 300px;
                                   text-align: center;
+                                  max-height: 300px;
                                  
                                   
                                 }
