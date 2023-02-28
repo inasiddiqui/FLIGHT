@@ -10,22 +10,26 @@
 	</head>
 
 	<body>
+
 		<a href="index.html" class="logo">
-		<img src="file:///Users/inasiddiqui/Desktop/FLIGHT/assets/noun-flight-1014306.svg" alt="Iconhome" width="300">
-	</a>
+			<img src="file:///Users/inasiddiqui/Desktop/FLIGHT/assets/noun-flight-1014306.svg" alt="Iconhome" width="300">
+		</a>
 
-
-	
+		<section class="flex-container">
 			<!-- Replace this URL with your channel to connect the API! -->
 			<a href="https://www.are.na/sandra-qin/flight-wqwqoip9im" id="channel-url">
-				
+				<h1 class="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
 			</a>
-			
+			<div class="channel-description"></div> <!-- Same here for the channel description. -->
+		</section>
+
 			<section class="flex-container">
-			<div class="channel-owner"> <p></p> </div> <!-- Owner and collaborators. -->
-		<nobr><div class= " channel-collaborator" > <p></p>  </div> </nobr> <!-- Owner and collaborators. -->
-			<a href="image.html" class= "images-button "> <p>  Images </p> </a> <!-- Owner and collaborators. -->
-			<a href="article.html" class= "articles">   <p>  Articles </p> </a> <!-- Owner and collaborators. -->
+			<div class="channel-owner">  </div> <!-- Owner and collaborators. -->
+		<div class= " channel-collaborator" >  </div>  <!-- Owner and collaborators. -->
+			<a href="image.html" class= "images-button" > <p> Images </p> </a> <!-- Owner and collaborators. -->
+			<a href="article.html" class= "articles" style="background-color: black; color: white;">   <p> Articles </p> </a>
+			<img src="file:///Users/inasiddiqui/Downloads/noun-arrow-1766473.png" alt="Iconhome" width="200"> <!-- Owner and collaborators. -->
+
 		</section>
 
 		<template id="channel-owner">
@@ -45,12 +49,11 @@
 	</template>
 		<br>
 		<section>
-			<h2 class="image-count"> Hi</h2> <!-- How many blocks. -->
+			<h2 class="channel-count"></h2> <!-- How many blocks. -->
 			<!-- All the channel “blocks” will be created as children, here. -->
 			<!-- You could move the classes to different section elements to separate the types! -->
 
 		</section>
-
 
 		<br><br>
 				
@@ -81,7 +84,7 @@
                     
                 </figure>
                 <a class="link">
-                    <p class="link-title"></p>
+                    <!-- <p class="link-title"></p> -->
                 </a>
                 <p class="time-updated"></p>
 

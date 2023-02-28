@@ -195,6 +195,7 @@ margin-top: 20px;
         font-family: Roboto Mono;
         color: rgb(238, 237, 235);
         text-decoration: overline 1px dotted ;
+        margin-top: 15px;
        
         
    
@@ -599,7 +600,7 @@ margin-top: 20px;
           
           
           
-          font-size: 10px;
+          font-size: 12px;
           font-family: Roboto Mono;
         }
 
@@ -672,7 +673,7 @@ margin-top: 20px;
          border-style: dashed;
          border-radius: 15px;
         
-         font-size: 10px;
+         font-size: 12px;
          font-family: Roboto Mono;
          
        
@@ -685,8 +686,8 @@ margin-top: 20px;
     
     font-size: 12px;
     font-family: Roboto Mono;
-    padding: 10px;
-         min-height: 50px;
+    padding: 13px;
+         min-height: 30px;
    
     
   
@@ -695,11 +696,11 @@ margin-top: 20px;
         .articles{
           background-color: rgb(108, 151, 75);
     border-radius: 15px;
-    
     font-size: 12px;
     font-family: Roboto Mono;
     padding: 10px;
-         min-height: 50px;
+         min-height: 30px;
+         
     
     
   
@@ -852,6 +853,7 @@ margin-top: 20px;
                             
                             .audio-embed.active aside {
                               display: block;
+                              overflow: scroll;
                             }
                             
                             
@@ -875,6 +877,7 @@ margin-top: 20px;
                             
                             .audio-file-block.active aside {
                               display: block;
+                              overflow: scroll;
                             }
                             
                             
@@ -897,6 +900,7 @@ margin-top: 20px;
                             
                             .video-file-block.active aside {
                               display: block;
+                              overflow: scroll;
                             }
                             
                             .video-embed-block aside {
@@ -917,6 +921,7 @@ margin-top: 20px;
                             
                             .video-embed-block.active aside {
                               display: block;
+                              overflow: scroll;
                             }
                             
                             
@@ -938,6 +943,7 @@ margin-top: 20px;
                             
                             .link-block.active aside {
                               display: block;
+                              overflow: scroll;
                             }       
                             
                             
@@ -959,6 +965,7 @@ margin-top: 20px;
                             
                             .text-block.active aside {
                               display: block;
+                              overflow: scroll;
                             }
                             
                             .embed{
