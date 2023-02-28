@@ -891,7 +891,7 @@
                             }
                             
                             .embed{
-                              max-width: 1vw;
+                              max-width: 375px;
                             }
                             .description{
                               padding-top: 10px;
