@@ -246,10 +246,10 @@ margin-top: 20px;
       }
       
       .content{
-        font-size: 10px;
+        font-size: 7px;
         font-family: Roboto Mono;
         font-weight: 200;
-        margin: 20px;
+        margin: 2px;
       }
 
       .link-title{
@@ -1117,7 +1117,7 @@ margin-top: 20px;
                                   padding: 40px;
                                   font-size: 14px;
                                   font-family: Roboto Mono;
-                                 min-height: none;
+                                  
                                   text-align: left;
                                 }
                                 
@@ -1133,7 +1133,7 @@ margin-top: 20px;
                                   padding: 20px;
                                   font-size: 16px;
                                   font-family: Roboto Mono;
-                                  min-height: none;
+                                  min-height: 30px;
                                   
                                 }
                                 .channel-collaborator{
@@ -1142,6 +1142,7 @@ margin-top: 20px;
                                   padding: 20px;
                                   font-size: 16px;
                                   font-family: Roboto Mono;
+                                  min-height: 30px;
                                   
                                   
                                  
@@ -1166,14 +1167,15 @@ margin-top: 20px;
                                   font-family: Roboto Mono;
                                   padding: 20px;
                                   margin: 10px;
+                                  min-height: 30px;
                                   
                                   }
                                   
                                 
                                   ul {
                                     display: grid;
-                                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                                    gap: 30px;
+                                    grid-template-columns: 1fr 1fr 1fr ;
+                                    gap: 25px;
                                     padding: 10px;
                                     position: relative;
                                   }
@@ -1182,13 +1184,13 @@ margin-top: 20px;
                                     
                                     background-color: rgb(238, 237, 235);
                                     border: 1px dotted rgba(0, 0, 0, 0.8);
-                                    border-radius: 60px;
+                                    border-radius: 30px;
                                     padding: 10px;
-                                    padding-top: 30px;
+                                    padding-top: 10px;
                                     font-size: 30px;
                                     text-align: center;
-                                    width: 300px;
-                                    height: 300px;
+                                    width: 150px;
+                                    height: 150px;
                                     position: relative;
                                     aspect-ratio: 1;
                                     transition: all 0.3s ease-out;
@@ -1207,20 +1209,20 @@ margin-top: 20px;
                                 
                                 
                                   .image-thumb{
-                                    width: 300px;
-                                    height: 300px;
+                                    width: 200px;
+                                    height: 200px;
                                     align-self: center;
                                   }
                                             .image-square{
-                                                            width: 200px;
-                                                            height: 200px;
+                                                            width: 150px;
+                                                            height: 150px;
                                                             border-radius: 40px;
                                                             align-self: center;
                                                           }
                                                         
                                             .image-display{
-                                                            width: 200px;
-                                                            height: 200px;
+                                                            width: 150px;
+                                                            height: 150px;
                                                             border-radius: 40px;
                                                             align-self: center;
                                                         }
@@ -1234,7 +1236,7 @@ margin-top: 20px;
                                                         
                                             
                                       .title{
-                                        font-size: 26px;
+                                        font-size: 22px;
                                         font-family: VT323;
                                         font-weight: 400;
                                         padding: 10px;
@@ -1334,16 +1336,17 @@ margin-top: 20px;
                                   padding: 20px;
                                   font-size: 16px;
                                   font-family: Roboto Mono;
-                                  min-height:none;
+                                  min-height: 30px;
+
                                   }
                                 
                                       .articles{
                                         background-color: rgb(108, 151, 75);
                                   border-radius: 25px;
-                                  padding: 10px;
+                                  padding: 20px;
                                   font-size: 16px;
                                   font-family: Roboto Mono;
-                                  max-height: 20px;
+                                  min-height: 30px;
                                   
                                 
                                       }
